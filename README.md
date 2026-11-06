@@ -17,8 +17,8 @@ Los scripts de cuadros sólo dan formato y no hacen aritmética.
 
 ```bash
 # 1. Clonar
-git clone https://github.com/<usuario>/<repositorio>.git
-cd <repositorio>
+git clone https://github.com/elisacaroliva/violencia-movilidad-paper-python.git
+cd violencia-movilidad-paper-python
 
 # 2. Entorno de Python (>= 3.10)
 python -m venv .venv

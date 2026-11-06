@@ -4,6 +4,7 @@ data/clean/**
 !data/raw/**/
 !data/clean/**/
 !data/**/.gitkeep
+!data/LEEME.md
 
 # ---- Salidas regenerables ----
 output/resultados/*
