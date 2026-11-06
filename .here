@@ -1,0 +1,2 @@
+# Marcador de la raíz del proyecto (como el .here del paquete here de R).
+# scripts/funciones/rutas.py lo busca hacia arriba para construir todas las rutas.

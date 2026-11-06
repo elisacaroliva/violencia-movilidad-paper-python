@@ -1,0 +1,13 @@
+{
+  "name": "replica-equipo4-violencia-movilidad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ensamblado de los .docx del manuscrito (pasos 20 y 21 del pipeline)",
+  "scripts": {
+    "build": "node scripts/manuscrito/20_build.js",
+    "build:es": "node scripts/manuscrito/21_build_es.js"
+  },
+  "dependencies": {
+    "docx": "^9.0.0"
+  }
+}
