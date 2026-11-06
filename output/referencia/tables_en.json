@@ -1,0 +1,741 @@
+{
+ "t1": {
+  "num": 1,
+  "titulo": "Descriptive statistics",
+  "cols": [
+   "Variable",
+   "Mean",
+   "SD",
+   "Exposed",
+   "Unexposed",
+   "Diff.",
+   "n"
+  ],
+  "anchos": [
+   36,
+   10,
+   10,
+   11,
+   12,
+   11,
+   10
+  ],
+  "filas": [
+   [
+    "Origin rank (household assets at 14)",
+    "0.505",
+    "0.286",
+    "0.500",
+    "0.508",
+    "-0.008",
+    "15,558"
+   ],
+   [
+    "Destination rank (household assets at survey)",
+    "0.499",
+    "0.289",
+    "0.495",
+    "0.501",
+    "-0.006",
+    "15,558"
+   ],
+   [
+    "Destination rank (years of schooling)",
+    "0.503",
+    "0.288",
+    "0.497",
+    "0.506",
+    "-0.009",
+    "15,558"
+   ],
+   [
+    "Years of schooling, respondent",
+    "10.453",
+    "3.910",
+    "11.246",
+    "10.059",
+    "+1.188",
+    "15,558"
+   ],
+   [
+    "Years of schooling, most educated parent",
+    "8.816",
+    "3.258",
+    "9.730",
+    "8.269",
+    "+1.462",
+    "11,814"
+   ],
+   [
+    "Violence intensity of state (2007-2017 index)",
+    "0.155",
+    "0.361",
+    "0.150",
+    "0.158",
+    "-0.008",
+    "15,558"
+   ],
+   [
+    "Share of formative window after 2007",
+    "0.203",
+    "0.345",
+    "0.613",
+    "0.000",
+    "+0.613",
+    "15,558"
+   ],
+   [
+    "Dose (intensity x window share)",
+    "0.031",
+    "0.151",
+    "0.092",
+    "0.000",
+    "+0.092",
+    "15,558"
+   ],
+   [
+    "Female",
+    "0.516",
+    "0.500",
+    "0.513",
+    "0.518",
+    "-0.005",
+    "15,558"
+   ],
+   [
+    "Rural origin (locality < 2,500)",
+    "0.317",
+    "0.465",
+    "0.287",
+    "0.332",
+    "-0.045",
+    "15,558"
+   ],
+   [
+    "Co-resides with parents",
+    "0.210",
+    "0.407",
+    "0.359",
+    "0.136",
+    "+0.223",
+    "15,558"
+   ]
+  ],
+  "nota": "Means and standard deviations weighted by the survey expansion factors. A respondent is classified as exposed if any part of the formative window, ages 10 to 18, fell after 2007: 5,035 respondents (32.4% of the sample). The difference column is descriptive; the estimates in Table 2 do not rest on it."
+ },
+ "t2": {
+  "num": 2,
+  "titulo": "Triple-difference estimates of the change in the rank-rank slope",
+  "cols": [
+   "Specification",
+   "β₃",
+   "se",
+   "t",
+   "95 % CI",
+   "n"
+  ],
+  "anchos": [
+   36,
+   11,
+   11,
+   8,
+   23,
+   11
+  ],
+  "filas": [
+   [
+    "(1) Baseline",
+    "+0.0161",
+    "(0.0255)",
+    "+0.63",
+    "[-0.034, +0.066]",
+    "15,558"
+   ],
+   [
+    "(2) Excluding co-residents",
+    "+0.0088",
+    "(0.0238)",
+    "+0.37",
+    "[-0.038, +0.055]",
+    "12,705"
+   ],
+   [
+    "(3) Including inter-state migrants",
+    "+0.0036",
+    "(0.0227)",
+    "+0.16",
+    "[-0.041, +0.048]",
+    "17,789"
+   ],
+   [
+    "(4) Dose from intentional homicide only",
+    "+0.0100",
+    "(0.0218)",
+    "+0.46",
+    "[-0.033, +0.053]",
+    "15,558"
+   ],
+   [
+    "(5) Clustering by birth year instead of state",
+    "+0.0161",
+    "(0.0245)",
+    "+0.65",
+    "[-0.032, +0.064]",
+    "15,558"
+   ]
+  ],
+  "nota": "Coefficients are the change in the rank-rank slope per standard deviation of state violence intensity, which is 0.409. The baseline slope is 0.650. All rows include state and birth-year fixed effects and both interacted with the origin rank, and are weighted by the expansion factors. Errors clustered by state, except row (5), which clusters by birth year. For row (1) the permutation test over 2,000 reassignments gives p = 0.62, with the central 95 % of the null between -0.060 and +0.063."
+ },
+ "t3": {
+  "num": 3,
+  "titulo": "The specification path: what each block of controls removes",
+  "cols": [
+   "Controls included",
+   "β₃",
+   "se",
+   "t"
+  ],
+  "anchos": [
+   54,
+   16,
+   16,
+   14
+  ],
+  "filas": [
+   [
+    "(1) No controls",
+    "+0.0302",
+    "(0.0372)",
+    "+0.81"
+   ],
+   [
+    "(2) + state and birth-year fixed effects",
+    "+0.0007",
+    "(0.0292)",
+    "+0.02"
+   ],
+   [
+    "(3) + state x origin rank",
+    "+0.0469",
+    "(0.0197)",
+    "+2.38"
+   ],
+   [
+    "(4) + birth-year x origin rank (full model)",
+    "+0.0161",
+    "(0.0255)",
+    "+0.63"
+   ]
+  ],
+  "nota": "Each row adds a block to the one above it; row (4) is the specification of Table 2, column (1). Coefficients per standard deviation of intensity; errors clustered by state in parentheses. The path is not monotone, which is why the specification is fixed by the identification argument of Section 4.2 rather than chosen from among these rows."
+ },
+ "t4": {
+  "num": 6,
+  "titulo": "Estimates using within-state municipal variation",
+  "cols": [
+   "Specification",
+   "β₃",
+   "se",
+   "t",
+   "n"
+  ],
+  "anchos": [
+   46,
+   13,
+   13,
+   10,
+   18
+  ],
+  "filas": [
+   [
+    "(1) Within-state dose from counts",
+    "-0.0344",
+    "(0.0232)",
+    "-1.49",
+    "15,529"
+   ],
+   [
+    "(2) Within-state dose from rate",
+    "+0.0084",
+    "(0.0175)",
+    "+0.48",
+    "15,529"
+   ],
+   [
+    "(3) Rate + locality size x rank",
+    "+0.0076",
+    "(0.0176)",
+    "+0.43",
+    "15,529"
+   ],
+   [
+    "(4) Rate, clustered by state",
+    "+0.0084",
+    "(0.0183)",
+    "+0.46",
+    "15,529"
+   ]
+  ],
+  "nota": "Treatment is the municipality's deviation from its own state mean, interacted with the share of the formative window after 2007. Coefficients are per standard deviation of that deviation. The sample is 15,529 respondents in 821 origin municipalities. Errors clustered by municipality except in row (4). The within-state correlation with rural origin is -0.30 using counts and -0.11 using the rate (-0.37 and -0.16 in levels). The joint pre-trend test using the rate gives p = 0.13 with locality-size controls and p = 0.22 without them."
+ },
+ "t5": {
+  "num": 4,
+  "titulo": "Cluster validation and within-cluster estimates",
+  "cols": [
+   "",
+   "Silhouette Ward / β₃",
+   "Silhouette k-means / se",
+   "R² vs k = 1 / t",
+   "Calinski-Harabasz / perm. p",
+   "Davies-Bouldin / n"
+  ],
+  "anchos": [
+   32,
+   14,
+   14,
+   13,
+   14,
+   13
+  ],
+  "filas": [
+   [
+    "Panel A. Choosing the number of clusters",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "k = 2",
+    "0.235",
+    "0.241",
+    "0.276",
+    "11.46",
+    "1.536"
+   ],
+   [
+    "k = 3",
+    "0.236",
+    "0.247",
+    "0.388",
+    "9.18",
+    "1.551"
+   ],
+   [
+    "k = 4",
+    "0.232",
+    "0.167",
+    "0.460",
+    "7.94",
+    "1.163"
+   ],
+   [
+    "k = 5",
+    "0.163",
+    "0.228",
+    "0.521",
+    "7.33",
+    "1.355"
+   ],
+   [
+    "k = 6",
+    "0.165",
+    "0.169",
+    "0.580",
+    "7.19",
+    "1.322"
+   ],
+   [
+    "k = 7",
+    "0.154",
+    "0.164",
+    "0.624",
+    "6.90",
+    "1.188"
+   ],
+   [
+    "k = 8",
+    "0.144",
+    "0.146",
+    "0.661",
+    "6.68",
+    "1.085"
+   ],
+   [
+    "Panel B. Agreement and stability",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Cophenetic correlation (Ward)",
+    "0.603",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Adjusted Rand, Ward vs k-means at k = 3",
+    "0.849",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Mean adjusted Rand, 500 80 % subsamples",
+    "0.865",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "  5th percentile of that distribution",
+    "0.631",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Spread of peak years (years)",
+    "20",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Panel C. The model within each cluster",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Cluster 1: 15 states, peak 2010",
+    "+0.0852",
+    "(0.0329)",
+    "+2.59",
+    "0.193",
+    "8,697"
+   ],
+   [
+    "Cluster 2: 11 states, peak 2017",
+    "-0.0350",
+    "(0.0132)",
+    "-2.64",
+    "0.380",
+    "5,019"
+   ],
+   [
+    "Cluster 3: 6 states, peak 1997",
+    "-0.0309",
+    "(0.1039)",
+    "-0.30",
+    "0.791",
+    "1,842"
+   ]
+  ],
+  "paneles": [
+   0,
+   8,
+   14
+  ],
+  "nota": "Panel A reports internal criteria by number of clusters; R² is the share of total sum of squares in trajectory shape explained by the partition, with k = 1 as the reference model, which is what the dose assumes. The silhouette is maximised at k = 3 under both algorithms, Calinski-Harabasz at k = 2, and Davies-Bouldin keeps improving; the 15-state first-wave cluster and the 11-state late-peak group are identical at k = 2, 3 and 4, so the conclusion does not depend on which criterion is followed. Panel C reports the estimate within each cluster, with clustered errors in parentheses and permutation p-values from 2,000 within-cluster reassignments. With 6 to 15 states per group the clustered statistic is unreliable and the permutation p-value is the one to read; both are shown so the gap is visible."
+ },
+ "t6": {
+  "num": 7,
+  "titulo": "Heterogeneity, alternative outcomes and reduced-form checks",
+  "cols": [
+   "",
+   "Coefficient",
+   "se",
+   "t",
+   "n / upper bound"
+  ],
+  "anchos": [
+   40,
+   14,
+   14,
+   10,
+   22
+  ],
+  "filas": [
+   [
+    "Panel A. Heterogeneity",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Women",
+    "+0.0354",
+    "(0.0262)",
+    "+1.35",
+    "8,636"
+   ],
+   [
+    "Men",
+    "+0.0199",
+    "(0.0502)",
+    "+0.40",
+    "6,922"
+   ],
+   [
+    "Rural origin",
+    "+0.0288",
+    "(0.0393)",
+    "+0.73",
+    "4,471"
+   ],
+   [
+    "Urban origin",
+    "+0.0118",
+    "(0.0229)",
+    "+0.52",
+    "11,087"
+   ],
+   [
+    "Origin in Q1-Q2",
+    "-0.1054",
+    "(0.1042)",
+    "-1.01",
+    "4,840"
+   ],
+   [
+    "Origin in Q4-Q5",
+    "+0.0044",
+    "(0.0910)",
+    "+0.05",
+    "7,271"
+   ],
+   [
+    "Panel B. Alternative destination measures",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Schooling-years rank",
+    "+0.0197",
+    "(0.0355)",
+    "+0.56",
+    "15,558"
+   ],
+   [
+    "Origin Q1 -> stays in Q1",
+    "-0.0189",
+    "(0.0355)",
+    "-0.53",
+    "2,236"
+   ],
+   [
+    "Origin Q1 -> reaches Q4 or Q5",
+    "-0.0157",
+    "(0.0286)",
+    "-0.55",
+    "2,236"
+   ],
+   [
+    "Panel C. Is there a first stage at all?",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Years of schooling",
+    "+0.0339",
+    "(0.1949)",
+    "+0.17",
+    "+0.416"
+   ],
+   [
+    "Destination asset index (level)",
+    "-0.0277",
+    "(0.1178)",
+    "-0.23",
+    "+0.203"
+   ],
+   [
+    "Inter-state migration",
+    "+0.0083",
+    "(0.0134)",
+    "+0.62",
+    "+0.035"
+   ]
+  ],
+  "paneles": [
+   0,
+   7,
+   11
+  ],
+  "nota": "Panels A and B report the triple-difference coefficient per standard deviation of intensity, with the full set of fixed effects and errors clustered by state. The last two rows of Panel B condition on the origin quintile, so the coefficient is the change in the probability of that transition and no interaction term enters. Panel C regresses outcomes in levels on the dose with state and birth-year fixed effects; the last column is the upper limit of the 95 % interval, that is, the largest effect the data rule out, in years for schooling, index points for assets and probability for migration."
+ },
+ "t7": {
+  "num": 5,
+  "titulo": "Estimates under three datings of the exposure dose",
+  "cols": [
+   "Dating of the surge",
+   "β₃",
+   "se",
+   "t",
+   "Minimum detectable effect"
+  ],
+  "anchos": [
+   34,
+   14,
+   14,
+   10,
+   28
+  ],
+  "filas": [
+   [
+    "Calendario común 2007 (original)",
+    "+0.0161",
+    "(0.0255)",
+    "+0.63",
+    "11.0% of the baseline slope"
+   ],
+   [
+    "Refechada por conglomerado",
+    "+0.0109",
+    "(0.0481)",
+    "+0.23",
+    "20.7% of the baseline slope"
+   ],
+   [
+    "Refechada por entidad",
+    "+0.0109",
+    "(0.0481)",
+    "+0.23",
+    "20.7% of the baseline slope"
+   ]
+  ],
+  "nota": "Row (1) imposes a common 2007 start for every state. Rows (2) and (3) estimate the start by fitting a level shift to the standardised violence trajectory and choosing the break year that minimises the residual sum of squares over a 2001-to-2015 grid, at the cluster and the state level respectively. The estimated cluster breaks are 2008 for cluster 1 (shift +1.26), 2011 for cluster 2 (shift +1.50), 2010 for cluster 3 (shift +0.56). Intensity is recomputed over each unit's post-break window, so coefficients are per standard deviation of the corresponding measure and are not comparable in level across rows, only in significance and in the implied bound. The share of the sample with any exposure falls from 32.4 % in row (1) to 26.7 % in row (2), which is why precision deteriorates."
+ },
+ "t8": {
+  "num": 8,
+  "titulo": "Effect on expected destination rank, by origin percentile",
+  "cols": [
+   "Origin percentile",
+   "State design",
+   "se",
+   "Municipal design",
+   "se",
+   "Contains −1.57?"
+  ],
+  "anchos": [
+   20,
+   16,
+   12,
+   18,
+   12,
+   22
+  ],
+  "filas": [
+   [
+    "p10",
+    "−1.05",
+    "(1.07)",
+    "+0.25",
+    "(0.94)",
+    ""
+   ],
+   [
+    "p25",
+    "−0.81",
+    "(0.81)",
+    "+0.36",
+    "(0.77)",
+    "state yes, municipal no"
+   ],
+   [
+    "p50",
+    "−0.41",
+    "(0.72)",
+    "+0.55",
+    "(0.63)",
+    ""
+   ],
+   [
+    "p75",
+    "−0.01",
+    "(1.09)",
+    "+0.74",
+    "(0.76)",
+    ""
+   ],
+   [
+    "p90",
+    "+0.23",
+    "(1.40)",
+    "+0.86",
+    "(0.94)",
+    ""
+   ]
+  ],
+  "nota": "Entries are rank points out of 100 per standard deviation of violence intensity, computed as the linear combination β₂ + p·β₃ from the specifications of Table 2 column (1) and Table 6 column (3), with errors from the same clustered covariance matrix. This is the outcome Sharkey and Torrats-Espinosa (2017) report as absolute upward mobility. Their instrumented estimate for the United States at the 25th percentile is −1.57 rank points per standard deviation of the county homicide rate. The last column records whether our 95 % interval at that percentile contains their value: the state design's, [−2.40, +0.78], does; the municipal one's, [−1.14, +1.87], does not. A standard deviation is not the same object in the two literatures, and the outcomes are an income rank there and an asset rank here, so the comparison is indicative and not a formal test."
+ },
+ "t9": {
+  "num": 9,
+  "titulo": "Three definitions of the violence treatment",
+  "cols": [
+   "Exposure index",
+   "β₃",
+   "se",
+   "Effect at p25",
+   "se",
+   "Pre-trend F",
+   "p"
+  ],
+  "anchos": [
+   28,
+   10,
+   10,
+   14,
+   10,
+   13,
+   15
+  ],
+  "filas": [
+   [
+    "(1) SESNSP, four crimes (main)",
+    "+0.0161",
+    "(0.0255)",
+    "−0.81",
+    "(0.81)",
+    "0.42",
+    "0.795  passes"
+   ],
+   [
+    "(2) INEGI, level 2007-17",
+    "+0.0014",
+    "(0.0267)",
+    "−0.34",
+    "(1.05)",
+    "1.61",
+    "0.198  passes"
+   ],
+   [
+    "(3) INEGI, increase over 1990-97",
+    "+0.0176",
+    "(0.0251)",
+    "−2.26",
+    "(1.22)",
+    "4.66",
+    "0.005  FAILS"
+   ]
+  ],
+  "nota": "Each row re-estimates the specification of Table 2 column (1) with a different exposure index, holding everything else fixed. β₃ is the change in the rank-rank slope per standard deviation of that index; the effect at p25 is in rank points out of 100, comparable with the −1.57 of Sharkey and Torrats-Espinosa. The last two columns report the joint test that birth groups predating the surge show no differential slope, which is the design's identifying assumption. Row (3) defines treatment as the increase in the homicide rate between 1990-97 and 2007-17 rather than its level, which is the better-identified object in principle; it gives the largest estimate in the paper and a permutation p-value of 0.077 on the p25 effect, and it is the only row that violates the identifying assumption. The INEGI figures are deaths by state and year of occurrence from the vital-statistics microdata, with CONAPO mid-year population as the denominator."
+ }
+}

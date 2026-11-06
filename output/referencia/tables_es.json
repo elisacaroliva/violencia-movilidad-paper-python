@@ -1,0 +1,741 @@
+{
+ "t1": {
+  "num": 1,
+  "titulo": "Estadísticas descriptivas",
+  "cols": [
+   "Variable",
+   "Media",
+   "D.E.",
+   "Expuestos",
+   "No expuestos",
+   "Dif.",
+   "n"
+  ],
+  "anchos": [
+   36,
+   10,
+   10,
+   11,
+   12,
+   11,
+   10
+  ],
+  "filas": [
+   [
+    "Rango de origen (activos a los 14)",
+    "0.505",
+    "0.286",
+    "0.500",
+    "0.508",
+    "-0.008",
+    "15 558"
+   ],
+   [
+    "Rango de destino (activos hoy)",
+    "0.499",
+    "0.289",
+    "0.495",
+    "0.501",
+    "-0.006",
+    "15 558"
+   ],
+   [
+    "Rango de destino (años de escolaridad)",
+    "0.503",
+    "0.288",
+    "0.497",
+    "0.506",
+    "-0.009",
+    "15 558"
+   ],
+   [
+    "Años de escolaridad del encuestado",
+    "10.453",
+    "3.910",
+    "11.246",
+    "10.059",
+    "+1.188",
+    "15 558"
+   ],
+   [
+    "Años de escolaridad del padre más educado",
+    "8.816",
+    "3.258",
+    "9.730",
+    "8.269",
+    "+1.462",
+    "11 814"
+   ],
+   [
+    "Intensidad de violencia de la entidad",
+    "0.155",
+    "0.361",
+    "0.150",
+    "0.158",
+    "-0.008",
+    "15 558"
+   ],
+   [
+    "Fracción de la ventana posterior a 2007",
+    "0.203",
+    "0.345",
+    "0.613",
+    "0.000",
+    "+0.613",
+    "15 558"
+   ],
+   [
+    "Dosis (intensidad × fracción)",
+    "0.031",
+    "0.151",
+    "0.092",
+    "0.000",
+    "+0.092",
+    "15 558"
+   ],
+   [
+    "Mujer",
+    "0.516",
+    "0.500",
+    "0.513",
+    "0.518",
+    "-0.005",
+    "15 558"
+   ],
+   [
+    "Origen rural (localidad < 2 500)",
+    "0.317",
+    "0.465",
+    "0.287",
+    "0.332",
+    "-0.045",
+    "15 558"
+   ],
+   [
+    "Correside con sus padres",
+    "0.210",
+    "0.407",
+    "0.359",
+    "0.136",
+    "+0.223",
+    "15 558"
+   ]
+  ],
+  "nota": "Medias y desviaciones estándar ponderadas por los factores de expansión. Se clasifica como expuesto a quien tuvo alguna parte de su ventana formativa  de los 10 a los 18 años  después de 2007: 5 035 encuestados (32.4% de la muestra). La columna de diferencia es descriptiva; las estimaciones del cuadro 2 no dependen de ella."
+ },
+ "t2": {
+  "num": 2,
+  "titulo": "Estimaciones de triple diferencia del cambio en la pendiente rango-rango",
+  "cols": [
+   "Especificación",
+   "β₃",
+   "ee",
+   "t",
+   "IC 95 %",
+   "n"
+  ],
+  "anchos": [
+   36,
+   11,
+   11,
+   8,
+   23,
+   11
+  ],
+  "filas": [
+   [
+    "(1) Especificación principal",
+    "+0.0161",
+    "(0.0255)",
+    "+0.63",
+    "[-0.034, +0.066]",
+    "15 558"
+   ],
+   [
+    "(2) Excluyendo corresidentes",
+    "+0.0088",
+    "(0.0238)",
+    "+0.37",
+    "[-0.038, +0.055]",
+    "12 705"
+   ],
+   [
+    "(3) Incluyendo migrantes entre entidades",
+    "+0.0036",
+    "(0.0227)",
+    "+0.16",
+    "[-0.041, +0.048]",
+    "17 789"
+   ],
+   [
+    "(4) Dosis sólo con homicidio doloso",
+    "+0.0100",
+    "(0.0218)",
+    "+0.46",
+    "[-0.033, +0.053]",
+    "15 558"
+   ],
+   [
+    "(5) Agrupando por año de nacimiento",
+    "+0.0161",
+    "(0.0245)",
+    "+0.65",
+    "[-0.032, +0.064]",
+    "15 558"
+   ]
+  ],
+  "nota": "Los coeficientes son el cambio en la pendiente rango-rango por desviación estándar de intensidad de violencia estatal, que es 0.409. La pendiente base es 0.650. Todas incluyen efectos fijos de entidad y de año de nacimiento y ambos interactuados con el rango de origen, y van ponderadas por los factores de expansión. Errores agrupados por entidad, salvo el renglón (5) que agrupa por año de nacimiento. Para el renglón (1) la prueba de permutación sobre 2 000 reasignaciones da p = 0.62, con el 95 % central del nulo entre -0.060 y +0.063."
+ },
+ "t3": {
+  "num": 3,
+  "titulo": "El camino de especificación: qué quita cada bloque de controles",
+  "cols": [
+   "Controles incluidos",
+   "β₃",
+   "ee",
+   "t"
+  ],
+  "anchos": [
+   54,
+   16,
+   16,
+   14
+  ],
+  "filas": [
+   [
+    "(1) Sin ningún control",
+    "+0.0302",
+    "(0.0372)",
+    "+0.81"
+   ],
+   [
+    "(2) + efectos fijos de entidad y nacimiento",
+    "+0.0007",
+    "(0.0292)",
+    "+0.02"
+   ],
+   [
+    "(3) + entidad × rango de origen",
+    "+0.0469",
+    "(0.0197)",
+    "+2.38"
+   ],
+   [
+    "(4) + nacimiento × rango (modelo final)",
+    "+0.0161",
+    "(0.0255)",
+    "+0.63"
+   ]
+  ],
+  "nota": "Cada renglón agrega un bloque al anterior; el (4) es la especificación del cuadro 2, columna (1). Coeficientes por desviación estándar de intensidad; errores agrupados por entidad entre paréntesis. El camino no es monótono, que es por qué la especificación se fija con el argumento de identificación de la sección 4.2 y no se elige de entre estos renglones."
+ },
+ "t4": {
+  "num": 6,
+  "titulo": "Estimaciones con variación municipal dentro del estado",
+  "cols": [
+   "Especificación",
+   "β₃",
+   "ee",
+   "t",
+   "n"
+  ],
+  "anchos": [
+   46,
+   13,
+   13,
+   10,
+   18
+  ],
+  "filas": [
+   [
+    "(1) Dosis intraestatal con conteos",
+    "-0.0344",
+    "(0.0232)",
+    "-1.49",
+    "15 529"
+   ],
+   [
+    "(2) Dosis intraestatal con tasa por 100 000",
+    "+0.0084",
+    "(0.0175)",
+    "+0.48",
+    "15 529"
+   ],
+   [
+    "(3) Tasa + tamaño de localidad × rango",
+    "+0.0076",
+    "(0.0176)",
+    "+0.43",
+    "15 529"
+   ],
+   [
+    "(4) Tasa, errores agrupados por entidad",
+    "+0.0084",
+    "(0.0183)",
+    "+0.46",
+    "15 529"
+   ]
+  ],
+  "nota": "El tratamiento es la desviación del municipio respecto a la media de su entidad  interactuada con la fracción de la ventana posterior a 2007. Coeficientes por desviación estándar de esa desviación. La muestra es 15 529 encuestados en 821 municipios de origen. Errores agrupados por municipio salvo el renglón (4). La correlación intraestatal con el origen rural es -0.30 con conteos y -0.11 con tasa (-0.37 y -0.16 en niveles). La prueba conjunta de tendencias previas con tasa da p = 0.13 con controles de tamaño y p = 0.22 sin ellos."
+ },
+ "t5": {
+  "num": 4,
+  "titulo": "Validación de los conglomerados y estimaciones por conglomerado",
+  "cols": [
+   "",
+   "Silueta Ward / β₃",
+   "Silueta k-medias / ee",
+   "R² contra k = 1 / t",
+   "Calinski-Harabasz / p perm.",
+   "Davies-Bouldin / n"
+  ],
+  "anchos": [
+   32,
+   14,
+   14,
+   13,
+   14,
+   13
+  ],
+  "filas": [
+   [
+    "Panel A. Selección del número de conglomerados",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "k = 2",
+    "0.235",
+    "0.241",
+    "0.276",
+    "11.46",
+    "1.536"
+   ],
+   [
+    "k = 3",
+    "0.236",
+    "0.247",
+    "0.388",
+    "9.18",
+    "1.551"
+   ],
+   [
+    "k = 4",
+    "0.232",
+    "0.167",
+    "0.460",
+    "7.94",
+    "1.163"
+   ],
+   [
+    "k = 5",
+    "0.163",
+    "0.228",
+    "0.521",
+    "7.33",
+    "1.355"
+   ],
+   [
+    "k = 6",
+    "0.165",
+    "0.169",
+    "0.580",
+    "7.19",
+    "1.322"
+   ],
+   [
+    "k = 7",
+    "0.154",
+    "0.164",
+    "0.624",
+    "6.90",
+    "1.188"
+   ],
+   [
+    "k = 8",
+    "0.144",
+    "0.146",
+    "0.661",
+    "6.68",
+    "1.085"
+   ],
+   [
+    "Panel B. Acuerdo y estabilidad",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Correlación cofenética (Ward)",
+    "0.603",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Rand ajustado, Ward contra k-medias en k = 3",
+    "0.849",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Rand ajustado medio, 500 sorteos del 80 %",
+    "0.865",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "  percentil 5 de esa distribución",
+    "0.631",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Amplitud de los años de pico (años)",
+    "20",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Panel C. El modelo dentro de cada conglomerado",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Conglomerado 1: 15 entidades, pico 2010",
+    "+0.0852",
+    "(0.0329)",
+    "+2.59",
+    "0.193",
+    "8 697"
+   ],
+   [
+    "Conglomerado 2: 11 entidades, pico 2017",
+    "-0.0350",
+    "(0.0132)",
+    "-2.64",
+    "0.380",
+    "5 019"
+   ],
+   [
+    "Conglomerado 3: 6 entidades, pico 1997",
+    "-0.0309",
+    "(0.1039)",
+    "-0.30",
+    "0.791",
+    "1 842"
+   ]
+  ],
+  "paneles": [
+   0,
+   8,
+   14
+  ],
+  "nota": "El panel A reporta criterios internos por número de conglomerados; R² es la fracción de la suma de cuadrados total en la forma de las trayectorias que explica la partición, con k = 1 como modelo de referencia, que es el que la dosis supone. La silueta se maximiza en k = 3 en los dos algoritmos, Calinski-Harabasz en k = 2 y Davies-Bouldin sigue mejorando; el conglomerado de primera ola de 15 entidades y el grupo de 11 de pico tardío son idénticos en k = 2, 3 y 4, así que la conclusión no depende de cuál criterio se siga. El panel C reporta la estimación dentro de cada conglomerado, con errores agrupados entre paréntesis y valores p de permutación de 2 000 reasignaciones dentro del conglomerado. Con 6 a 15 entidades por grupo el estadístico agrupado no es fiable y el valor p de permutación es el que hay que leer; se muestran los dos para que la brecha se vea."
+ },
+ "t6": {
+  "num": 7,
+  "titulo": "Heterogeneidad, desenlaces alternativos y comprobaciones de forma reducida",
+  "cols": [
+   "",
+   "Coeficiente",
+   "ee",
+   "t",
+   "n / cota superior"
+  ],
+  "anchos": [
+   40,
+   14,
+   14,
+   10,
+   22
+  ],
+  "filas": [
+   [
+    "Panel A. Heterogeneidad",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Mujeres",
+    "+0.0354",
+    "(0.0262)",
+    "+1.35",
+    "8 636"
+   ],
+   [
+    "Hombres",
+    "+0.0199",
+    "(0.0502)",
+    "+0.40",
+    "6 922"
+   ],
+   [
+    "Origen rural",
+    "+0.0288",
+    "(0.0393)",
+    "+0.73",
+    "4 471"
+   ],
+   [
+    "Origen urbano",
+    "+0.0118",
+    "(0.0229)",
+    "+0.52",
+    "11 087"
+   ],
+   [
+    "Origen en Q1 y Q2",
+    "-0.1054",
+    "(0.1042)",
+    "-1.01",
+    "4 840"
+   ],
+   [
+    "Origen en Q4 y Q5",
+    "+0.0044",
+    "(0.0910)",
+    "+0.05",
+    "7 271"
+   ],
+   [
+    "Panel B. Medidas de destino alternativas",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Rango de años de escolaridad",
+    "+0.0197",
+    "(0.0355)",
+    "+0.56",
+    "15 558"
+   ],
+   [
+    "Origen Q1 → sigue en Q1",
+    "-0.0189",
+    "(0.0355)",
+    "-0.53",
+    "2 236"
+   ],
+   [
+    "Origen Q1 → llega a Q4 o Q5",
+    "-0.0157",
+    "(0.0286)",
+    "-0.55",
+    "2 236"
+   ],
+   [
+    "Panel C. ¿Hay primera etapa siquiera?",
+    "",
+    "",
+    "",
+    ""
+   ],
+   [
+    "Años de escolaridad",
+    "+0.0339",
+    "(0.1949)",
+    "+0.17",
+    "+0.416"
+   ],
+   [
+    "Índice de activos de destino (nivel)",
+    "-0.0277",
+    "(0.1178)",
+    "-0.23",
+    "+0.203"
+   ],
+   [
+    "Migración entre entidades",
+    "+0.0083",
+    "(0.0134)",
+    "+0.62",
+    "+0.035"
+   ]
+  ],
+  "paneles": [
+   0,
+   7,
+   11
+  ],
+  "nota": "Los paneles A y B reportan el coeficiente de triple diferencia por desviación estándar de intensidad, con el conjunto completo de efectos fijos y errores agrupados por entidad. Los últimos dos renglones del panel B condicionan al quintil de origen, así que el coeficiente es el cambio en la probabilidad de esa transición y no entra término de interacción. El panel C regresa desenlaces en nivel sobre la dosis con efectos fijos de entidad y de nacimiento; la última columna es el límite superior del intervalo de 95 %, es decir el mayor efecto que los datos descartan, en años para escolaridad, puntos de índice para activos y probabilidad para migración."
+ },
+ "t7": {
+  "num": 5,
+  "titulo": "Estimaciones bajo tres fechados de la dosis de exposición",
+  "cols": [
+   "Fechado del repunte",
+   "β₃",
+   "ee",
+   "t",
+   "Efecto mínimo detectable"
+  ],
+  "anchos": [
+   34,
+   14,
+   14,
+   10,
+   28
+  ],
+  "filas": [
+   [
+    "Calendario común de 2007 (original)",
+    "+0.0161",
+    "(0.0255)",
+    "+0.63",
+    "11.0% de la pendiente base"
+   ],
+   [
+    "Refechada por conglomerado",
+    "+0.0109",
+    "(0.0481)",
+    "+0.23",
+    "20.7% de la pendiente base"
+   ],
+   [
+    "Refechada por entidad",
+    "+0.0109",
+    "(0.0481)",
+    "+0.23",
+    "20.7% de la pendiente base"
+   ]
+  ],
+  "nota": "El renglón (1) impone un inicio común en 2007 para toda entidad. Los renglones (2) y (3) estiman el inicio ajustando un cambio de nivel a la trayectoria estandarizada de violencia y eligiendo el año de quiebre que minimiza la suma de cuadrados residual sobre una rejilla de 2001 a 2015, a nivel de conglomerado y de entidad respectivamente. Los quiebres estimados por conglomerado son 2008 para el conglomerado 1 (salto +1.26), 2011 para el conglomerado 2 (salto +1.50), 2010 para el conglomerado 3 (salto +0.56). La intensidad se recalcula sobre la ventana posterior al quiebre de cada unidad, así que los coeficientes son por desviación estándar de la medida correspondiente y no son comparables en nivel entre renglones, sólo en significancia y en la cota implícita. La proporción de la muestra con alguna exposición cae de 32.4 % en el renglón (1) a 26.7 % en el (2), que es por qué la precisión se deteriora."
+ },
+ "t8": {
+  "num": 8,
+  "titulo": "Efecto sobre el rango esperado de destino, por percentil de origen",
+  "cols": [
+   "Percentil de origen",
+   "Diseño estatal",
+   "ee",
+   "Diseño municipal",
+   "ee",
+   "¿Contiene −1.57?"
+  ],
+  "anchos": [
+   20,
+   16,
+   12,
+   18,
+   12,
+   22
+  ],
+  "filas": [
+   [
+    "p10",
+    "-1.05",
+    "(1.07)",
+    "+0.25",
+    "(0.94)",
+    ""
+   ],
+   [
+    "p25",
+    "-0.81",
+    "(0.81)",
+    "+0.36",
+    "(0.77)",
+    "estatal sí, municipal no"
+   ],
+   [
+    "p50",
+    "-0.41",
+    "(0.72)",
+    "+0.55",
+    "(0.63)",
+    ""
+   ],
+   [
+    "p75",
+    "-0.01",
+    "(1.09)",
+    "+0.74",
+    "(0.76)",
+    ""
+   ],
+   [
+    "p90",
+    "+0.23",
+    "(1.40)",
+    "+0.86",
+    "(0.94)",
+    ""
+   ]
+  ],
+  "nota": "Las entradas son puntos de rango sobre 100 por desviación estándar de intensidad de violencia, calculadas como la combinación lineal β₂ + p·β₃ de las especificaciones del cuadro 2 columna (1) y del cuadro 6 columna (3), con errores de la misma matriz de covarianzas agrupada. Es el desenlace que Sharkey y Torrats-Espinosa (2017) reportan como movilidad absoluta ascendente. Su estimación instrumentada para Estados Unidos en el percentil 25 es −1.57 puntos de rango por desviación estándar de la tasa de homicidio del condado. La última columna registra si nuestro intervalo de 95 % en ese percentil contiene su valor: el del diseño estatal, [-2.40, +0.78], sí; el del municipal, [-1.14, +1.87], no. Una desviación estándar no es el mismo objeto en las dos literaturas, y los desenlaces son un rango de ingreso allá y uno de activos aquí, así que la comparación es indicativa y no una prueba formal."
+ },
+ "t9": {
+  "num": 9,
+  "titulo": "Tres definiciones del tratamiento de violencia",
+  "cols": [
+   "Índice de exposición",
+   "β₃",
+   "ee",
+   "Efecto en p25",
+   "ee",
+   "F previas",
+   "p"
+  ],
+  "anchos": [
+   28,
+   10,
+   10,
+   14,
+   10,
+   13,
+   15
+  ],
+  "filas": [
+   [
+    "(1) SESNSP, cuatro delitos (principal)",
+    "+0.0161",
+    "(0.0255)",
+    "−0.81",
+    "(0.81)",
+    "0.42",
+    "0.79  pasa"
+   ],
+   [
+    "(2) INEGI, nivel 2007-17",
+    "+0.0014",
+    "(0.0267)",
+    "−0.34",
+    "(1.05)",
+    "1.61",
+    "0.198  pasa"
+   ],
+   [
+    "(3) INEGI, aumento sobre 1990-97",
+    "+0.0176",
+    "(0.0251)",
+    "−2.26",
+    "(1.22)",
+    "4.66",
+    "0.005  REPRUEBA"
+   ]
+  ],
+  "nota": "Cada renglón reestima la especificación del cuadro 2 columna (1) con un índice de exposición distinto, dejando todo lo demás fijo. β₃ es el cambio en la pendiente rango-rango por desviación estándar de ese índice; el efecto en p25 está en puntos de rango sobre 100, comparable con el −1.57 de Sharkey y Torrats-Espinosa. Las dos últimas columnas reportan la prueba conjunta de que los grupos de nacimiento previos al repunte no muestran pendiente diferencial, que es el supuesto de identificación del diseño. El renglón (3) define el tratamiento como el aumento de la tasa de homicidio entre 1990-97 y 2007-17 en lugar de su nivel, que es el objeto mejor identificado en principio; da la estimación mayor del artículo y una p de permutación de 0.077, y es el único renglón que viola el supuesto de identificación. Las cifras del INEGI son defunciones por entidad y año de ocurrencia de los microdatos de estadísticas vitales, con población de CONAPO a mitad de año como denominador."
+ }
+}
