@@ -74,4 +74,6 @@ DOCX    = here("output", "docx")
 MAN_EN  = here("manuscrito", "en")                           # manuscript.md, anexos.md, references.md
 MAN_ES  = here("manuscrito", "es")
 
-asegurar(SAL, OUT, FIG_EN, FIG_ES, DOCX, INE, here("data", "clean"))
+asegurar(SAL, OUT, FIG_EN, FIG_ES, DOCX, INE, here("data", "clean"), here("output", "logs"),
+         EMO, EMO17, os.path.dirname(SES), os.path.dirname(MUN), os.path.dirname(CON),
+         INEGI_MICRO, here("data", "raw", "inegi_pibe"))
